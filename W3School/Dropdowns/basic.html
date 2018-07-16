@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basic Dropdown</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Basic Dropdown</h2>
+    <p>Use <code>.dropdown</code> class indicates a dropdown menu.</p>
+    <p>
+        To open the dropdown menu, use a button or a link with a class of <code>.dropdown-toggle</code> and the
+        <code>data-toggle="dropdown"</code> attribute.
+    </p>
+    <p>
+        Add the <code>.dropdown-menu</code> class to a <code>&lt;div&gt;</code> element to actually build the dropdown
+        menu. Then add the <code>.dropdown-item</code> class to each element (links or buttons) inside the dropdown
+        menu.
+    </p>
+
+    <div class="dropdown">
+        <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Dropdown Button</button>
+        <div class="dropdown-menu">
+            <a class="dropdown-item" href="#">Item 1</a>
+            <a class="dropdown-item" href="#">Item 2</a>
+            <a class="dropdown-item" href="#">Item 3</a>
+            <a class="dropdown-item" href="#">Item 4</a>
+            <a class="dropdown-item" href="#">Item 5</a>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>

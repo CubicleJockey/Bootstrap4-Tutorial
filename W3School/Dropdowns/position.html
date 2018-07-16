@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Dropdown Positions</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Dropdown Positions</h2>
+    <p>
+        Using the <code>.dropright</code> or <code>.dropleft</code> class to the dropdown element with position them
+        respectively. <strong>Note</strong> that the caret/arrow is added automatically.
+    </p>
+
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="dropdown dropright">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Dropright</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Item 1</a>
+                    <a class="dropdown-item" href="#">Item 2</a>
+                    <a class="dropdown-item" href="#">Item 3</a>
+                    <a class="dropdown-item" href="#">Item 4</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Thingy 1</a>
+                    <a class="dropdown-item" href="#">Thingy 2</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="dropdown dropleft">
+                <button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown">Dropleft</button>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#">Item 1</a>
+                    <a class="dropdown-item" href="#">Item 2</a>
+                    <a class="dropdown-item" href="#">Item 3</a>
+                    <a class="dropdown-item" href="#">Item 4</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Thingy 1</a>
+                    <a class="dropdown-item" href="#">Thingy 2</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
