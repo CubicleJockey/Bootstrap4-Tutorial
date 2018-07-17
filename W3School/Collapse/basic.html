@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Collapse</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Collapse</h2>
+    <p>
+        The <code>.collapse</code> class indicates a collapsible element (a <code>&lt;div&gt;</code> in this example);
+        this is the content that will be shown or hidden with a click of a button.
+    </p>
+    <p>
+        To control (show/hide) the collapsible content, add the <code>data-toggle="collapse"</code> attribute to an
+        <code>&lt;a&gt;</code> or <code>&lt;button&gt;</code> element. Then add the <code>data-targert="#id"</code>
+        attribute to connect the button with the collapsible content (<code>&lt;div id="demo"&gt;</code>).
+    </p>
+    <p>
+        <strong>Note:</strong> for <code>&lt;a&gt;</code> element use the <code>href</code> attribute instead of the
+        <code>data-target</code> attribute.
+
+        <strong>Note:</strong> by default collapsible content is hidden.
+    </p>
+
+    <button data-toggle="collapse" data-target="#demo">Collapsible</button>
+
+    <div id="demo" class="collapse">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent efficitur vehicula sodales.
+        Praesent ac augue quis lorem ultricies accumsan. Mauris dignissim, neque sed rutrum congue, dolor leo sodales
+        nulla, et sodales nunc ligula ac dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer
+        dignissim semper arcu in feugiat. Suspendisse potenti. Cras at libero a eros pellentesque viverra.
+        In hac habitasse platea dictumst. Quisque arcu tortor, pellentesque sit amet odio et, finibus congue odio.
+        Nunc sit amet nisi convallis, semper orci ut, auctor nulla. Morbi sit amet hendrerit nisi. Duis eu leo sit
+        amet eros tristique fermentum nec at justo. Vivamus pulvinar mi sit amet justo dignissim facilisis.
+    </div>
+
+</div>
+
+</body>
+</html>
