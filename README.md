@@ -3,4 +3,8 @@
  * [Bootstrap](https://getbootstrap.com)
  * [W3School Tutorial](https://www.w3schools.com/bootstrap4/default.asp)
  
- Will need to run: <pre>npm install</pre>
+ 
+ ### Pre-Requisites:
+  * [NodeJs](https://nodejs.org/en/)
+ 
+ Will need to run in the W3School directory: <pre>npm install</pre>
