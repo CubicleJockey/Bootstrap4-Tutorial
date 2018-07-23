@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Pills</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Toggleable/Dynamic Tabs</h2>
+    <p>
+        To make the tabs toggleable, add the <code>data-toggle="tab"</code> attribute to each link.
+        Then add a <code>.tab-pane</code> class witha unique ID for every tab and warp them inside a
+        <code>&lt;div&gt;</code> element with class <code>.tab-content</code>.
+    </p>
+    <p>
+        If you want the tabs to fade in and out when clicking on them, add the <code>.fade</code> class to the
+        <code>.tab-pane</code>:
+    </p>
+
+    <!-- Nav Tabs-->
+    <ul class="nav nav-tabs">
+        <li class="nav-item">
+            <a class="nav-link active" data-toggle="tab" href="#home">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu1">Menu 1</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" data-toggle="tab" href="#menu2">Menu 2</a>
+        </li>
+    </ul>
+
+
+    <!-- Nav Panes-->
+    <div class="tab-content">
+        <div class="tab-pane container active" id="home">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur risus urna, vehicula in aliquet ut,
+            viverra vel nulla. Aenean quis neque augue. Nulla hendrerit tincidunt lorem sed porta.
+            Pellentesque pulvinar vitae diam nec ullamcorper. Quisque placerat, orci vel pretium facilisis,
+            justo nulla euismod dolor, non aliquet velit odio at urna. Donec convallis tortor sit amet diam tristique
+            feugiat. Quisque varius ornare malesuada. Suspendisse et pulvinar elit. Suspendisse suscipit bibendum
+            neque in bibendum. Sed in imperdiet nunc.
+        </div>
+        <div class="tab-pane container fade" id="menu1">
+            Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+            Donec blandit risus est, eget sagittis dolor ultricies non. Orci varius natoque penatibus et magnis dis
+            parturient montes, nascetur ridiculus mus. Cras pulvinar pellentesque urna nec tempus. Morbi vel dictum
+            lectus. Suspendisse potenti. Pellentesque et lobortis massa. Phasellus in iaculis urna. Pellentesque non
+            augue est.
+        </div>
+        <div class="tab-pane container fade" id="menu2">
+            Cras auctor turpis a tellus mollis, sed posuere nunc ultricies. Nunc neque neque, pretium mattis maximus at,
+            lobortis at dolor. Aliquam posuere congue massa sed blandit. Suspendisse sed quam nec lacus sollicitudin
+            vulputate et pharetra quam. Duis mi ligula, tincidunt id ligula sed, lobortis auctor justo. Quisque commodo
+            fermentum elit quis suscipit. Phasellus faucibus quam in metus mattis, sit amet interdum magna sollicitudin.
+        </div>
+    </div>
+
+</div>
+
+</body>
+</html>
