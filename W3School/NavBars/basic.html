@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basic Navigation Bars</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Basic Navigation Bars</h2>
+    <p>
+        With Bootstrap, a navigation bar can extend or collapse, depending on the screen size.
+    </p>
+    <p>
+        A standard navigation bar is created with the <code>.navbar</code> class, followed by a responsive collapsing
+        class: <code>.navbar-expand-xl|lg|md|sm</code> (stacks the navbar vertically on extra large, large, medium or
+        small screens).
+    </p>
+    <p>
+        To add links inside the navbar, use a <code>&lt;ul&gt;</code> element with <code>class="navbar-nav"</code>. The
+        add <code>&lt;li&gt;</code> elements with a <code>.nav-item</code> class followed by an <code>&lt;a&gt;</code>
+        element with a <code>.nav-link</code> class:
+    </p>
+
+    <nav class="navbar navbar-expand-sm bg-light">
+
+        <!-- Links -->
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 1</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 2</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link 3</a>
+            </li>
+        </ul>
+    </nav>
+
+
+</div>
+
+</body>
+</html>
