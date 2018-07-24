@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Basic Navigation Bars</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Basic Navigation Bars</h2>
+    <p>
+        To create a collapsible navigation bar, use a button with <code>.navbar-toggler</code> class.
+        <code>data-toggle="collapse"</code> and <code>data-target="#theTarget"</code>. Then wrap the navbar
+        content (links, etc) inside a <code>&lt;div&gt;</code> element with a class of
+        <code>.collapse navbar-collapse</code>, followed by an id that matches the <code>data-target</code> of the
+        button: "theTarget":
+    </p>
+
+    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+
+        <!-- Brand -->
+        <a class="navbar-brand" href="#">Navbar</a>
+
+        <!-- Toggler/Collapsible Button-->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links-->
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Clickable</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Clickable</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Clickable</a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
+</div>
+
+</body>
+</html>
