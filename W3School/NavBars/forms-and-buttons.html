@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Navbar Forms and Buttons</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script>
+        function submitted(){
+            var searchBox = document.getElementById('SearchBox');
+            var formValue = searchBox.value;
+
+            if(formValue === undefined || formValue === null || formValue === '') {
+                alert('No value submitted.');
+                return;
+            }
+
+            var paragraph = document.getElementById('panel');
+            paragraph.textContent = `${formValue} would be submitted to the server.`;
+
+            return false;
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Navbar Forms and Buttons</h2>
+    <p>
+        Add a <code>&lt;form&gt;</code> element with <code>.form-inline</code> class to group inputs and buttons
+        side-by-side:
+    </p>
+
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <form class="form-inline" onsubmit="return submitted()">
+            <input id="SearchBox" name="SearchBox" class="form-control mr-sm-2" type="text" placeholder="Search">
+            <button class="btn btn-success" type="submit">Search</button>
+        </form>
+    </nav>
+
+    <p id="panel"></p>
+
+</div>
+
+</body>
+</html>
