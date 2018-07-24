@@ -9,22 +9,7 @@
 
     <script src="../node_modules/jquery/dist/jquery.min.js"></script>
     <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script>
-        function submitted(){
-            var searchBox = document.getElementById('SearchBox');
-            var formValue = searchBox.value;
-
-            if(formValue === undefined || formValue === null || formValue === '') {
-                alert('No value submitted.');
-                return;
-            }
-
-            var paragraph = document.getElementById('panel');
-            paragraph.textContent = `${formValue} would be submitted to the server.`;
-
-            return false;
-        }
-    </script>
+    <script src="formSubmit.js"></script>
 </head>
 <body>
 
