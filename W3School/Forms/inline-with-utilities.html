@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inline Form Layouts with Utilities</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="formSubmit.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Inline Form Layouts with Utilities</h2>
+    <p>
+        The inline form can feel "compressed", and will look much better with Bootstrap's spacing utilities. This
+        example uses <code>.mr-sm-2</code> for right margin to be added to all devices (small and up). And a margin
+        bottom class <code>.mb-2</code> is used to style the input field when it breaks (goes from horizontal to
+        vertical due to now enough space/width:
+    </p>
+
+
+    <form class="form-inline" onsubmit="return formSubmit()">
+
+        <div class="form-group">
+            <label for="email" class="mr-sm-2">Email address:</label>
+            <input type="email" class="form-control mb-2 mr-sm-2" id="email">
+        </div>
+
+        <div class="form-group">
+            <label for="password" class="mr-sm-2">Password:</label>
+            <input type="password" class="form-control mb-2 mr-sm-2" id="password">
+        </div>
+
+        <div class="form-group mb-2 mr-sm-2">
+            <label class="form-check-label">
+                <input class="form-check-label" type="checkbox" id="rememberMe">Remember Me
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary mb-2">Submit</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>

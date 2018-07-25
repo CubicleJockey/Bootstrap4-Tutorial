@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Inline Form Layouts</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="formSubmit.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Inline Form Layouts</h2>
+    <p>
+        In an inline form, all of the elements are inline and left-aligned.
+    </p>
+    <p>
+        <strong>
+            Note: This only applies to forms within viewports that are at least 576px wide. On screens smaller than
+            576px, it will stack horizontally.
+        </strong>
+    </p>
+    <p>
+        Additional rule for an inline form:
+        <ul>
+            <li>Add class <code>.form-inline</code> to the <code>&lt;form&gt;</code> element.</li>
+        </ul>
+    </p>
+
+
+    <form class="form-inline" onsubmit="return formSubmit()">
+
+        <div class="form-group">
+            <label for="email">Email address:</label>
+            <input type="email" class="form-control" id="email">
+        </div>
+
+        <div class="form-group">
+            <label for="password">Password:</label>
+            <input type="password" class="form-control" id="password">
+        </div>
+
+        <div class="form-group">
+            <label class="form-check-label">
+                <input class="form-check-label" type="checkbox" id="rememberMe">Remember Me
+            </label>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
