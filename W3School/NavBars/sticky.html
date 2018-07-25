@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Sticky Navigation Bars</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/popper.js/dist/umd/popper.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <div class="container-fluid">
+        <br>
+        <h2>Sticky Navbar</h2>
+        <p>
+            Use the <code>.stick-top</code> class to make the navbar fixed/stay at the <strong>top</strong> of the page
+            when you scroll <strong>past</strong> it. <strong>Note:</strong> This class does not work in <i>IE11</i> and
+            earlier (will treat it as <code>position:relative</code>):
+        </p>
+        <br>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet ex quis magna auctor ultricies at
+            vitae ipsum. Maecenas at nibh in mauris scelerisque mollis nec nec orci. Etiam velit urna, lacinia laoreet
+            mattis vel, aliquam eu sem. Praesent a nisi eu augue lacinia congue sed eget ligula. Proin orci risus,
+            lobortis sed porttitor at, blandit in ligula. Cras maximus molestie lacus, sodales egestas neque mollis
+            quis. Phasellus pharetra ligula lectus, vitae tristique est ultrices ac. Fusce in diam metus. Integer
+            ultricies leo sit amet turpis consequat, aliquet ornare ipsum imperdiet. Duis a mi in eros iaculis porttitor
+            nec consequat felis. Maecenas ac volutpat sapien, vel egestas urna. Vestibulum quis suscipit sapien. Proin
+            at lectus magna. Aliquam cursus dapibus pellentesque. Proin commodo, enim in porta commodo, eros quam
+            consequat erat, eu malesuada ante nulla non elit.
+        </p>
+        <p>
+            Donec quis ex justo. Quisque et interdum justo, in blandit nunc. Duis ipsum quam, ultricies ac urna eget,
+            porttitor aliquet risus. Aenean in suscipit quam, ac tempor urna. Aliquam erat volutpat. Praesent ornare
+            justo sit amet quam semper, lacinia suscipit urna euismod. Proin id elementum mi. Nam porttitor mi a
+            ultrices mollis. Donec eget dolor dignissim, venenatis justo id, maximus ex. Fusce sodales bibendum libero
+            id iaculis. Sed nibh lacus, condimentum vitae faucibus nec, venenatis eu ante. Aliquam consequat vitae enim
+            eget lacinia. Morbi et sem non lectus tincidunt convallis. Duis commodo dictum consectetur. Nulla sit amet
+            sodales ligula, egestas gravida lacus. Phasellus congue vulputate mi, vel tincidunt risus placerat sit amet.
+        </p>
+    </div>
+
+    <!-- Sticky Navigation is outside of the containers -->
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <a class="navbar-brand" href="#">Logo</a>
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link active" href="#">Active</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link disabled" href="#">Disabled</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container-fluid">
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet ex quis magna auctor ultricies at
+            vitae ipsum. Maecenas at nibh in mauris scelerisque mollis nec nec orci. Etiam velit urna, lacinia laoreet
+            mattis vel, aliquam eu sem. Praesent a nisi eu augue lacinia congue sed eget ligula. Proin orci risus,
+            lobortis sed porttitor at, blandit in ligula. Cras maximus molestie lacus, sodales egestas neque mollis
+            quis. Phasellus pharetra ligula lectus, vitae tristique est ultrices ac. Fusce in diam metus. Integer
+            ultricies leo sit amet turpis consequat, aliquet ornare ipsum imperdiet. Duis a mi in eros iaculis porttitor
+            nec consequat felis. Maecenas ac volutpat sapien, vel egestas urna. Vestibulum quis suscipit sapien. Proin
+            at lectus magna. Aliquam cursus dapibus pellentesque. Proin commodo, enim in porta commodo, eros quam
+            consequat erat, eu malesuada ante nulla non elit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet ex quis magna auctor ultricies at
+            vitae ipsum. Maecenas at nibh in mauris scelerisque mollis nec nec orci. Etiam velit urna, lacinia laoreet
+            mattis vel, aliquam eu sem. Praesent a nisi eu augue lacinia congue sed eget ligula. Proin orci risus,
+            lobortis sed porttitor at, blandit in ligula. Cras maximus molestie lacus, sodales egestas neque mollis
+            quis. Phasellus pharetra ligula lectus, vitae tristique est ultrices ac. Fusce in diam metus. Integer
+            ultricies leo sit amet turpis consequat, aliquet ornare ipsum imperdiet. Duis a mi in eros iaculis porttitor
+            nec consequat felis. Maecenas ac volutpat sapien, vel egestas urna. Vestibulum quis suscipit sapien. Proin
+            at lectus magna. Aliquam cursus dapibus pellentesque. Proin commodo, enim in porta commodo, eros quam
+            consequat erat, eu malesuada ante nulla non elit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet ex quis magna auctor ultricies at
+            vitae ipsum. Maecenas at nibh in mauris scelerisque mollis nec nec orci. Etiam velit urna, lacinia laoreet
+            mattis vel, aliquam eu sem. Praesent a nisi eu augue lacinia congue sed eget ligula. Proin orci risus,
+            lobortis sed porttitor at, blandit in ligula. Cras maximus molestie lacus, sodales egestas neque mollis
+            quis. Phasellus pharetra ligula lectus, vitae tristique est ultrices ac. Fusce in diam metus. Integer
+            ultricies leo sit amet turpis consequat, aliquet ornare ipsum imperdiet. Duis a mi in eros iaculis porttitor
+            nec consequat felis. Maecenas ac volutpat sapien, vel egestas urna. Vestibulum quis suscipit sapien. Proin
+            at lectus magna. Aliquam cursus dapibus pellentesque. Proin commodo, enim in porta commodo, eros quam
+            consequat erat, eu malesuada ante nulla non elit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet ex quis magna auctor ultricies at
+            vitae ipsum. Maecenas at nibh in mauris scelerisque mollis nec nec orci. Etiam velit urna, lacinia laoreet
+            mattis vel, aliquam eu sem. Praesent a nisi eu augue lacinia congue sed eget ligula. Proin orci risus,
+            lobortis sed porttitor at, blandit in ligula. Cras maximus molestie lacus, sodales egestas neque mollis
+            quis. Phasellus pharetra ligula lectus, vitae tristique est ultrices ac. Fusce in diam metus. Integer
+            ultricies leo sit amet turpis consequat, aliquet ornare ipsum imperdiet. Duis a mi in eros iaculis porttitor
+            nec consequat felis. Maecenas ac volutpat sapien, vel egestas urna. Vestibulum quis suscipit sapien. Proin
+            at lectus magna. Aliquam cursus dapibus pellentesque. Proin commodo, enim in porta commodo, eros quam
+            consequat erat, eu malesuada ante nulla non elit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet ex quis magna auctor ultricies at
+            vitae ipsum. Maecenas at nibh in mauris scelerisque mollis nec nec orci. Etiam velit urna, lacinia laoreet
+            mattis vel, aliquam eu sem. Praesent a nisi eu augue lacinia congue sed eget ligula. Proin orci risus,
+            lobortis sed porttitor at, blandit in ligula. Cras maximus molestie lacus, sodales egestas neque mollis
+            quis. Phasellus pharetra ligula lectus, vitae tristique est ultrices ac. Fusce in diam metus. Integer
+            ultricies leo sit amet turpis consequat, aliquet ornare ipsum imperdiet. Duis a mi in eros iaculis porttitor
+            nec consequat felis. Maecenas ac volutpat sapien, vel egestas urna. Vestibulum quis suscipit sapien. Proin
+            at lectus magna. Aliquam cursus dapibus pellentesque. Proin commodo, enim in porta commodo, eros quam
+            consequat erat, eu malesuada ante nulla non elit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet ex quis magna auctor ultricies at
+            vitae ipsum. Maecenas at nibh in mauris scelerisque mollis nec nec orci. Etiam velit urna, lacinia laoreet
+            mattis vel, aliquam eu sem. Praesent a nisi eu augue lacinia congue sed eget ligula. Proin orci risus,
+            lobortis sed porttitor at, blandit in ligula. Cras maximus molestie lacus, sodales egestas neque mollis
+            quis. Phasellus pharetra ligula lectus, vitae tristique est ultrices ac. Fusce in diam metus. Integer
+            ultricies leo sit amet turpis consequat, aliquet ornare ipsum imperdiet. Duis a mi in eros iaculis porttitor
+            nec consequat felis. Maecenas ac volutpat sapien, vel egestas urna. Vestibulum quis suscipit sapien. Proin
+            at lectus magna. Aliquam cursus dapibus pellentesque. Proin commodo, enim in porta commodo, eros quam
+            consequat erat, eu malesuada ante nulla non elit.
+        </p>
+        <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sit amet ex quis magna auctor ultricies at
+            vitae ipsum. Maecenas at nibh in mauris scelerisque mollis nec nec orci. Etiam velit urna, lacinia laoreet
+            mattis vel, aliquam eu sem. Praesent a nisi eu augue lacinia congue sed eget ligula. Proin orci risus,
+            lobortis sed porttitor at, blandit in ligula. Cras maximus molestie lacus, sodales egestas neque mollis
+            quis. Phasellus pharetra ligula lectus, vitae tristique est ultrices ac. Fusce in diam metus. Integer
+            ultricies leo sit amet turpis consequat, aliquet ornare ipsum imperdiet. Duis a mi in eros iaculis porttitor
+            nec consequat felis. Maecenas ac volutpat sapien, vel egestas urna. Vestibulum quis suscipit sapien. Proin
+            at lectus magna. Aliquam cursus dapibus pellentesque. Proin commodo, enim in porta commodo, eros quam
+            consequat erat, eu malesuada ante nulla non elit.
+        </p>
+    </div>
+
+</div>
+
+</body>
+</html>
