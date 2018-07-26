@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Input Groups</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Input Groups</h2>
+    <p>
+        The <code>.input-group</code> class is a container to enhance an input by adding an icon, text or a button
+        in front or behind the input field as a "help text".
+    </p>
+    <p>
+        Use <code>.input-group-prepend</code> to add the help text in front of the input, and
+        <code>.input-group-append</code> to add it behind the input.
+    </p>
+    <p>
+        At last, add the <code>.input-group-text</code> class to style the specific "help text".
+    </p>
+
+    <form>
+        <h3>Prepend</h3>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">@</span>
+            </div>
+            <input class="form-control" type="text" placeholder="UserName">
+        </div>
+
+        <h3>Append</h3>
+        <div class="input-group mb-3">
+            <input class="form-control" type="text">
+            <div class="input-group-append">
+                <span class="input-group-text">@yopmail.com</span>
+            </div>
+        </div>
+
+    </form>
+
+</div>
+
+</body>
+</html>

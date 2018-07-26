@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Multiple Inputs</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Multiple Inputs</h2>
+    <p>
+        Multiple inputs for one Prepend/Append helper:
+    </p>
+
+    <form>
+
+        <h3>Prepend with Multiple Inputs:</h3>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Person:</span>
+            </div>
+            <input type="text" class="form-control" placeholder="First Name">
+            <input type="text" class="form-control" placeholder="Last Name">
+        </div>
+
+        <br>
+
+        <h3>Append with Multiple Inputs:</h3>
+        <div class="input-group mb-3">
+            <input type="text" class="form-control" placeholder="Area Code">
+            <input type="text" class="form-control" placeholder="Number">
+            <div class="input-group-prepend">
+                <span class="input-group-text">:Phone Number</span>
+            </div>
+        </div>
+    </form>
+
+</div>
+
+</body>
+</html>
