@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Select List</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="formSubmit.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Select List</h2>
+    <p>
+       Select list just use the basic <code>.form-group</code> and <code>.form-control</code> classes:
+    </p>
+
+    <form onsubmit="return formSubmit()">
+
+        <label for="selectList">Select an item:</label>
+        <select class="form-control" id="selectList" name="selectList">
+            <option>Item 1</option>
+            <option>Item 2</option>
+            <option>Item 3</option>
+            <option>Item 4</option>
+            <option>Item 5</option>
+            <option>Item 6</option>
+        </select>
+        <button type="submit" class="btn btn-outline-primary">Submit</button>
+    </form>
+
+</div>
+
+</body>
+</html>

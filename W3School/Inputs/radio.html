@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>Inline Checkboxes</title>
+    <title>Radio Buttons</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -14,29 +14,27 @@
 <body>
 
 <div class="container">
-    <h2>Inline Checkboxes</h2>
-    <p>
-        Use the <code>.form-check-inline</code> class if you want the checkboxes to appear on the same line:
-    </p>
+    <h2>Radio Buttons</h2>
     <form onsubmit="return formSubmit()">
 
-        <div class="form-check-inline">
+        <div class="form-check">
             <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">Option 1
+                <input type="radio" class="form-check-input" name="option">Option 1
             </label>
         </div>
-        <div class="form-check-inline">
+        <div class="form-check">
             <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="">Option 2
+                <input type="radio" class="form-check-input" name="option">Option 2
             </label>
         </div>
-        <div class="form-check-inline disabled">
+        <div class="form-check disabled">
             <label class="form-check-label">
-                <input type="checkbox" class="form-check-input" value="" disabled>Option 3 (Disabled)
+                <input type="radio" class="form-check-input" name="option" disabled>Option 3 (Disabled)
             </label>
         </div>
 
     </form>
+
 </div>
 
 </body>

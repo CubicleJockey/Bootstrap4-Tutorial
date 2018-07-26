@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Form Control Sizing</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="formSubmit.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Form Control Sizing</h2>
+    <p>
+        Change the size of the form control with the <code>.form-control-sm</code> or <code>.form-control-lg</code>:
+    </p>
+    <form onsubmit="return formSubmit()">
+
+        <input type="text" class="form-control form-control-sm" placeholder="Small"> <br>
+        <input type="text" class="form-control" placeholder="Default"> <br>
+        <input type="text" class="form-control form-control-lg" placeholder="Large">
+
+    </form>
+
+</div>
+
+</body>
+</html>
