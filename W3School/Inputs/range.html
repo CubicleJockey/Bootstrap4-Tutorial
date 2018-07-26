@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Range Controls</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="formSubmit.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <script>
+        function valueChange(){
+            let inputElement = document.getElementById('rangeElement');
+            let rangeValueElement = document.getElementById('rangeValue');
+
+            rangeValueElement.innerHTML = `Range Value: <code>${inputElement.value}</code>`;
+        }
+    </script>
+</head>
+<body>
+
+<div class="container">
+    <h2>Range Controls</h2>
+    <p>
+        Add the <code>.form-control-range</code> with <code>&lt;input&gt;</code> elements attribute
+        <code>type="range"</code>:
+    </p>
+
+    <form onsubmit="return formSubmit()">
+
+        <input type="range" class="form-control-range" onchange="valueChange()" id="rangeElement" value="50">
+
+    </form>
+    <p id="rangeValue">Range Value: <code>50</code></p>
+
+</div>
+
+</body>
+</html>

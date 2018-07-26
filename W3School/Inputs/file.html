@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>File Controls</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <script src="formSubmit.js"></script>
+    <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<div class="container">
+    <h2>File Controls</h2>
+    <p>
+        Add the <code>.form-control-file</code> class the <code>&lt;input&gt;</code> element and change its attribute
+        <code>type="file"</code>:
+    </p>
+
+    <form onsubmit="return formSubmit()">
+
+        <input type="file" class="form-control-file border">
+        <button type="submit" class="btn btn-outline-primary">Submit</button>
+
+    </form>
+
+</div>
+
+</body>
+</html>
